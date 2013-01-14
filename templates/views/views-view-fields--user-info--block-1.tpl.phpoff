@@ -1,0 +1,5 @@
+<h4>Logged on as</h4>
+<div class="user-info-header">
+	<h3><?php print $fields['name']->content ?></h3>
+	<div class="user-info-edit"><?php print $fields['edit_node']->content ?></div>
+</div>

@@ -1,0 +1,19 @@
+$(function() {
+	if ($('#block-views--exp-tracks-page_1 .views-exposed-widget')) {
+		if ('#block-views--exp-tracks-page_1 .views-exposed-widget .views-operator') {
+			$('#block-views--exp-tracks-page_1 .views-exposed-widget .views-operator').parent().addClass('has-operator');
+		}
+	}
+
+	if ($('.node-type-track #comments')) {
+		$('.node-type-track #comments').appendTo('#track-comments');
+	}
+
+	if ($('.openlayers-container')) {
+		var ContentWidth = $('#content-wrap').width();
+		var OLControlsWidth = $('#OpenLayers_Control_MaximizeDiv_innerImage').width();
+		$('.openlayers-container').css({ "width" : ContentWidth });
+		$('.openlayers-map').css({ "width" : (ContentWidth - OLControlsWidth) });
+	}
+
+});

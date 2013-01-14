@@ -1,0 +1,441 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+/* -------------------------------------------------- 
+   Colours
+-----------------------------------------------------
+:: 
+*/
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Font face
+:: Shared Styles
+:: Containers
+:: Navigation
+:: Content
+*/
+
+@font-face {
+  font-family:"DejaVu Sans ExtraLight";
+  src: url("DejaVuSans-ExtraLight.eot?") format("eot"),
+       url("DejaVuSans-ExtraLight.woff") format("woff"),
+	   url("DejaVuSans-ExtraLight.ttf") format("truetype"),
+	   url("DejaVuSans-ExtraLight.svg#DejaVuSans-ExtraLight") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+/* Base Type Styles Using Modular Scale ---------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
+  margin: 0; 
+  padding: 0; 
+  font-size: 13px;
+}
+
+body {
+  color: #6382a0;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif; 
+  line-height: 1.3;
+  background: rgb(223,221,215); /* Old browsers */
+}
+
+p {
+    font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+a {
+  color: #22456c;
+  line-height: 1.3;
+}
+
+a:visited {
+  color: #22456c;
+}
+
+a:hover {
+  color: #b2544d;
+}
+
+a:active {
+  color: #b2544d;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #625f4d;
+  font-family: "DejaVu Sans ExtraLight", Arial, sans-serif;
+  margin-bottom: 2px;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 19px;
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 10px;
+  font-size: 1.0rem;
+}
+
+h6 {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+table tbody tr td {
+    line-height: 12px;
+	padding: 3px;
+}
+
+.container {
+  padding: 0 5px;
+}
+
+#admin-menu, #admin-menu ul a {
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 9px !important;
+    text-align: left;
+	line-height: 1em;
+}
+
+/*
+body.admin_menu {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
+*/
+
+.button, .form-submit {
+  border: 1px solid #bbb;
+  color: #444;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-transform: capitalize;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+a.button, .button a {
+  color: #444;
+  text-decoration: none;
+}
+
+.button:hover, .form-submit:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+  background-image: -moz-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -ms-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -o-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(#bfbfbf));
+  background-image: -webkit-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: linear-gradient(top, #e1e1e1, #bfbfbf);
+}
+
+body.admin-menu {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+  line-height: 1.1em;
+}
+
+/* -----------------------------------------
+   Containers  ..these added by Miles
+----------------------------------------- */
+#logoMenu {
+  width: 210px;
+}
+#inner-content-wrap {
+  height: 150px; /* Set to force nicescoll to be active on occasions when it's not ie. for the gallery pages */
+  overflow-y: hidden;
+}
+#sidebar-first {
+  width: 210px;
+  overflow-y: hidden;
+  background: rgb(223,221,215); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(230,233,230,1) 0%, rgba(223,221,215,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(230,233,230,1)), color-stop(100%,rgba(223,221,215,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(230,233,230,1) 0%,rgba(223,221,215,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(230,233,230,1) 0%,rgba(223,221,215,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(230,233,230,1) 0%,rgba(223,221,215,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(230,233,230,1) 0%,rgba(223,221,215,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbddd9', endColorstr='#d1cec6',GradientType=1 ); /* IE6-9 */
+}
+
+#main-sidebar-wrap {
+  width: 180px;
+  overflow-y: hidden;
+  background: rgb(223,221,215); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(223,221,215,1) 0%, rgba(230,233,230,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(223,221,215,1)), color-stop(100%,rgba(230,233,230,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(223,221,215,1) 0%,rgba(230,233,230,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(223,221,215,1) 0%,rgba(230,233,230,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(223,221,215,1) 0%,rgba(230,233,230,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(223,221,215,1) 0%,rgba(230,233,230,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cec6', endColorstr='#dbddd9',GradientType=1 ); /* IE6-9 */
+}
+
+.view-dom-id-7882bd9f209f911626969cbab30b7467, .view-dom-id-d4f5a17a354621375c18152855941e43, .view-dom-id-8177d8272d30ab26f0bab6faf1de1031{
+  overflow-x: hidden;
+}
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+#logo {
+  float: left;
+  padding-right: 3px;
+  width: 105px;
+}
+
+/* -----------------------------------------
+   Navigation
+----------------------------------------- */
+#nav-wrap {
+  float: left;
+}
+
+#nav-wrap ul, #nav-wrap li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-wrap li {
+  display: block;
+}
+
+#nav-wrap a {
+  border: 1px solid #bbb9b5;
+  font-family: "DejaVu Sans ExtraLight", Helvetica, Arial, sans-serif; 
+  color: #14355a;
+  display: block;
+  font-size: 16px;
+  height: 27px;
+  line-height: 27px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: 100px;
+/*  -moz-box-shadow: 0 0 3px #555;
+  -webkit-box-shadow: 0 0 3px #555;
+  box-shadow: 0 0 3px #555; */
+  background: rgb(215,213,208); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(215,213,208,1) 0%, rgba(228,226,221,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(215,213,208,1)), color-stop(100%,rgba(228,226,221,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(215,213,208,1) 0%,rgba(228,226,221,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(215,213,208,1) 0%,rgba(228,226,221,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(215,213,208,1) 0%,rgba(228,226,221,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(215,213,208,1) 0%,rgba(228,226,221,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d5d0', endColorstr='#e4e2dd',GradientType=1 ); /* IE6-9 */
+}
+
+#nav-wrap li:last-child a {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+.track-sidebar-first {
+  clear: both;
+  overflow: hidden;
+}
+
+#track-comments input, #track-comments textarea {
+  max-width: 100%;
+}
+
+/* -----------------------------------------
+   Nodes
+----------------------------------------- */
+.track-header {
+  margin-bottom: 1.5%;
+}
+
+.track-header h3 {
+  display: inline;
+}
+
+/* -----------------------------------------
+   Views
+----------------------------------------- */
+
+.openlayers-views-map {
+  border: 1px solid gold;
+  -moz-box-shadow: 0 0 9px #333;
+  -webkit-box-shadow: 0 0 9px #333;
+  box-shadow: 0 0 9px #333;
+}
+
+#block-views-user_info-block_1 .user-info-header {
+  clear: both;
+  overflow: hidden;
+}
+
+#block-views-user_info-block_1 h3, #block-views-user_info-block_1 .user-info-edit {
+  float: left;
+}
+
+#block-views-user_info-block_1 h3 {
+  padding-right: 5px;
+}
+
+#block-views-user_info-block_1 h3 a {
+  color: #0A344A;
+}
+
+/*  The commented out lines below and the few lines from the active styles after that 
+were my atempt to 'float center' the exposed filters on the man map.
+It didn't work.  It brought the filter to be inline with the map itself, 
+which caused the map to fly out to the left on FF, and the filter to be 
+within the (class) openlayers-views-map div.  The filters were centered though! 
+
+.view-filters {
+  width:100%;
+  clear:both;
+  float:left;
+  position:relative;
+}
+
+#views-exposed-form-tracks-page-1 {
+  width:100%;
+  clear:both;  
+  float:left;
+}
+*/
+
+#views-exposed-form-tracks-page-1 .views-exposed-widgets {
+  /* border-top: 1px solid #bbb; */
+  padding: 3px 0;
+/*  float: right;
+    right: 50%;  */
+  position: relative;
+  z-index: 70;
+/*  -moz-box-shadow: 0 0 3px #888;
+  -webkit-box-shadow: 0 0 3px #888;
+  box-shadow: 0 0 3px #888;  */
+/*  background: rgb(223,221,215); /* Old browsers */
+/*  background: -moz-linear-gradient(top,  rgba(228,226,221,1) 0%, rgba(215,213,208,1) 100%); /* FF3.6+ */
+/*  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(228,226,221,1)), color-stop(100%,rgba(215,213,208,1))); /* Chrome,Safari4+ */
+/*  background: -webkit-linear-gradient(top,  rgba(228,226,221,1) 0%,rgba(215,213,208,1) 100%); /* Chrome10+,Safari5.1+ */
+/*  background: -o-linear-gradient(top,  rgba(228,226,221,1) 0%,rgba(215,213,208,1) 100%); /* Opera 11.10+ */
+/*  background: -ms-linear-gradient(top,  rgba(228,226,221,1) 0%,rgba(215,213,208,1) 100%); /* IE10+ */
+/*  background: linear-gradient(to bottom,  rgba(228,226,221,1) 0%,rgba(215,213,208,1) 100%); /* W3C */
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e2dd', endColorstr='#d7d5d0',GradientType=0 ); /* IE6-9 */
+}
+
+#views-exposed-form-tracks-page-1 .views-exposed-widget {
+  padding: 0;
+/*  float: left;  
+    left: 50%;  */
+  position: relative;
+}
+
+#views-exposed-form-tracks-page-1 .views-exposed-widget > label {
+  background: transparent url(../images/arrow-down.png) bottom center no-repeat;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-right: 3px;
+  padding: 0 9px 12px 9px;
+  text-align: center;
+}
+
+/* 
+#views-exposed-form-tracks-page-1 .views-exposed-widget:first-child > label {
+  border-left: none;
+}
+*/
+#views-exposed-form-tracks-page-1 .views-widget, #views-exposed-form-tracks-page-1 .views-operator {
+  background-color: #ddd;
+  display: none;
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  top: 100%;
+  width: 180px;
+}
+
+#views-exposed-form-tracks-page-1 .views-exposed-widget.has-operator .views-widget {
+  top: 200%;
+}
+
+#views-exposed-form-tracks-page-1 .views-exposed-widget:hover .views-widget,
+#views-exposed-form-tracks-page-1 .views-exposed-widget:hover .views-operator {
+  display: block;
+}
+
+#views-exposed-form-tracks-page-1 .views-widget label {
+  font-weight: bold;
+}
+
+#views-exposed-form-tracks-page-1 .views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0.2em;
+}
+
+#block-views-Stories-block_1 .views-row {
+  margin-bottom: 1.5%;
+}
+
+#block-views-Stories-block_1 h3, #block-views-Stories-block_1 p {
+  margin: 0;
+}
+
+#block-views-Stories-block_1 h3 a {
+  color: #0A344A;
+  font-size: 14px;
+}

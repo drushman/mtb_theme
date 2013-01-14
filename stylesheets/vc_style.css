@@ -1,0 +1,90 @@
+/*Page forum */
+/*header*/
+.node-header-wrapper {
+  float: left;
+  width: 100%;
+}
+
+.node-header-wrapper  span,
+.filter-content-list li span{
+  height: 30px;
+  width: 30px;
+}
+.node-header-wrapper  span{float: left;}
+.filter-content-list li span{float: right;}
+
+.node-header-wrapper h3.title {
+  float: left;
+  width: auto;
+}
+.node-header-wrapper-images span,
+.node-header-wrapper-images h3.title{margin: 10px;}
+
+.node-header-wrapper-non-images span {
+  margin-right: 10px;
+}
+
+.node-header-wrapper  span.type-track { background: url('../images/images_forum/icon_tracks.png'); }
+.node-header-wrapper  span.type-bike { background: url('../images/images_forum/icon_bikes.png'); }
+.node-header-wrapper  span.type-event { background: url('../images/images_forum/icon_events.png'); }
+.node-header-wrapper  span.type-forum_topic { background: url('../images/images_forum/icon_forum.png'); }
+.node-header-wrapper  span.type-photos { background: url('../images/images_forum/icon_photos.png'); }
+.node-header-wrapper  span.type-embedded_video { background: url('../images/images_forum/icon_videos.png'); }
+
+
+.filter-content-list  span.type-track { background: url('../images/images_forum/icon_tracks.png'); }
+.filter-content-list  span.type-bike { background: url('../images/images_forum/icon_bikes.png'); }
+.filter-content-list  span.type-event { background: url('../images/images_forum/icon_events.png'); }
+.filter-content-list  span.type-forum_topic { background: url('../images/images_forum/icon_forum.png'); }
+.filter-content-list  span.type-photos { background: url('../images/images_forum/icon_photos.png'); }
+.filter-content-list  span.type-embedded_video { background: url('../images/images_forum/icon_videos.png'); }
+
+
+.node-header-wrapper .image-thumbnail{
+  float: left;
+  border: 1px solid yellow;
+}
+
+
+
+/*content*/
+
+
+.item-list {
+  padding-bottom: 35px;
+  float: left;
+}
+.item-list ul.comments {float: left;width: 100%;}
+
+.item-list ul.comments, 
+ul.filter-content-list, 
+ul.filter-content-list li, 
+.item-list ul.comments li {margin: 0; list-style: none;}
+
+.item-list ul.comments li,
+.filter-content-list li,
+ul.comments .views-field-comment,
+ul.comments .views-field-timestamp
+{
+  float: left;
+  width: 100%;
+}
+
+ul.comments .views-field-timestamp .field-content{
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-style: italic;
+}
+
+ul.comments .views-field-timestamp .field-content span.author,
+ul.comments .views-field-timestamp .field-content span.author a{color:#936659;}
+
+
+.filter-content-list li .link-left {float: left;width: auto}
+
+ul.filter-content-list li {padding: 0 20px 0 20px; margin-bottom: 5px;}
+
+.block-vc_config h2.title {font-size: 16px;float: left; margin-bottom: 20px;}
+
+#views-exposed-form-comments-recent-page .views-exposed-form .views-exposed-widget {padding: .5em 0 0 0;}

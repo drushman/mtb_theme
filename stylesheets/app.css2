@@ -1,0 +1,359 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+/* -------------------------------------------------- 
+   Colours
+-----------------------------------------------------
+:: 
+*/
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Containers
+:: Navigation
+:: Content
+*/
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+  color: #245081;
+  background-color: #eeeeee;
+  background-image: -o-linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
+  background-image: -webkit-linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
+  background-image: -ms-linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
+  background-image: linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
+}
+
+a {
+  color: #919797;
+}
+
+a:visited {
+  color: #919797;
+}
+
+a:hover {
+  color: #9e2218;
+}
+
+a:active {
+  color: #919797;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #0A344A;
+  color: #4f4b38;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+.container {
+  padding: 0 5px;
+}
+
+.row {
+  max-width: 100%;
+}
+
+.column, .columns {
+  margin-left: 0;
+}
+
+.row .one.columns {
+  width: 8.7%;
+}
+
+.row .two.columns {
+  width: 17.4%;
+}
+
+.row .three.columns {
+  width: 26.08%;
+}
+
+.row .four.columns {
+  width: 34.77%;
+}
+
+.row .five.columns {
+  width: 43.5%;
+}
+
+.row .six.columns {
+  width: 50%;
+}
+
+.row .seven.columns {
+  width: 60.9%;
+}
+
+.row .eight.columns {
+  width: 69.6%;
+}
+
+.row .nine.columns {
+  width: 73.9%;
+}
+
+.row .ten.columns {
+  width: 82.6%;
+}
+
+.row .eleven.columns {
+  width: 91.3%;
+}
+
+.row .twelve.columns {
+  width: 100%;
+}
+
+body.admin_menu {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
+
+.button, .form-submit {
+  border: 1px solid #bbb;
+  color: #444;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-transform: capitalize;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+a.button, .button a {
+  color: #444;
+  text-decoration: none;
+}
+
+.button:hover, .form-submit:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+  background-image: -moz-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -ms-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -o-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(#bfbfbf));
+  background-image: -webkit-linear-gradient(top, #e1e1e1, #bfbfbf);
+  background-image: linear-gradient(top, #e1e1e1, #bfbfbf);
+}
+
+body.admin-menu {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
+
+/* -----------------------------------------
+   Containers
+----------------------------------------- */
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+#logo {
+  float: left;
+  padding-right: 3px;
+  width: 150px;
+}
+
+/* -----------------------------------------
+   Navigation
+----------------------------------------- */
+#nav-wrap {
+  float: left;
+}
+
+#nav-wrap ul, #nav-wrap li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-wrap li {
+  display: block;
+}
+
+#nav-wrap a {
+  border: 1px solid #ccc;
+  color: #777;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: 95px;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -ms-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: linear-gradient(top, #eeeeee, #dddddd);
+}
+
+#nav-wrap li:last-child a {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+.track-sidebar-first {
+  clear: both;
+  overflow: hidden;
+}
+
+#track-comments input, #track-comments textarea {
+  max-width: 100%;
+}
+
+/* -----------------------------------------
+   Nodes
+----------------------------------------- */
+.track-header {
+  margin-bottom: 1.5%;
+}
+
+.track-header h3 {
+  display: inline;
+}
+
+/* -----------------------------------------
+   Views
+----------------------------------------- */
+.view-tracks {
+  border: 1px solid gold;
+}
+
+#block-views-user_info-block_1 .user-info-header {
+  clear: both;
+  overflow: hidden;
+}
+
+#block-views-user_info-block_1 h3, #block-views-user_info-block_1 .user-info-edit {
+  float: left;
+}
+
+#block-views-user_info-block_1 h3 {
+  padding-right: 5px;
+}
+
+#block-views-user_info-block_1 h3 a {
+  color: #0A344A;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widgets {
+  border-top: 1px solid #bbb;
+  padding: 3px 0;
+  position: relative;
+  z-index: 70;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -ms-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: linear-gradient(top, #eeeeee, #dddddd);
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widget {
+  padding: 0;
+  position: relative;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widget > label {
+  background: transparent url(../images/arrow-down.png) bottom center no-repeat;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-right: 3px;
+  padding: 0 9px 12px 9px;
+  text-align: center;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widget:first-child > label {
+  border-left: none;
+}
+
+#block-views--exp-tracks-page_1 .views-widget, #block-views--exp-tracks-page_1 .views-operator {
+  background-color: #ddd;
+  display: none;
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  top: 100%;
+  width: 180px;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widget.has-operator .views-widget {
+  top: 200%;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-widget:hover .views-widget,
+#block-views--exp-tracks-page_1 .views-exposed-widget:hover .views-operator {
+  display: block;
+}
+
+#block-views--exp-tracks-page_1 .views-widget label {
+  font-weight: bold;
+}
+
+#block-views--exp-tracks-page_1 .views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0.2em;
+}
+
+#block-views-Stories-block_1 .views-row {
+  margin-bottom: 1.5%;
+}
+
+#block-views-Stories-block_1 h3, #block-views-Stories-block_1 p {
+  margin: 0;
+}
+
+#block-views-Stories-block_1 h3 a {
+  color: #0A344A;
+  font-size: 14px;
+}
