@@ -64,10 +64,12 @@ $(document).ready(function() {
    $("#sidebar-first").niceScroll();
    $("#main-sidebar-wrap").niceScroll();
    $("#inner-content-wrap").niceScroll();
+//   $("#block-views-photos-block_1").niceScroll();
  //  $(".view-dom-id-7882bd9f209f911626969cbab30b7467").niceScroll();
  //  $(".view-dom-id-d4f5a17a354621375c18152855941e43").niceScroll();
  //  $(".view-dom-id-8177d8272d30ab26f0bab6faf1de1031").niceScroll();
    mapwidth();
    $(window).bind("resize", mapwidth);
 });
+
 })(jq183)
