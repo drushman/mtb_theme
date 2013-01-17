@@ -73,5 +73,12 @@ $(function() {
       )
       .jScrollPane();
   }
+  
+  $('#map-wrap .view-header a').click(function () {
+    $('#map-wrap .view-filters'). toggle(function() {
+   //   fadeIn = show;
+  //    fadeOut = hide;
+    });
+  });
  
 });
