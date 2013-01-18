@@ -69,23 +69,38 @@ $(document).ready(function() {
       var clientWidth = parseInt(e.target.clientWidth);
       
       if ((scrollWidth - scrollLeft) <= (clientWidth + 30)) {
-//        $(".view-photos.view-display-id-block_1 .view-content .gradient").removeClass('active');
-//        $(".view-photos.view-display-id-block_1 .view-content .gradient").addClass("disable")
         $(".view-photos.view-display-id-block_1  .gradient").removeClass('active');
         $(".view-photos.view-display-id-block_1  .gradient").addClass("disable")
       } 
       else {
-//        $(".view-photos.view-display-id-block_1 .view-content .gradient").removeClass('disable');
-//        $(".view-photos.view-display-id-block_1 .view-content .gradient").addClass("active")
         $(".view-photos.view-display-id-block_1 .gradient").removeClass('disable');
         $(".view-photos.view-display-id-block_1 .gradient").addClass("active")
       }
       $(".view-photos.view-display-id-block_1 .view-content").css('width', '92.9%');
     });
+    
+    $(".view-videos.view-display-id-block_2 .view-content").bind('scroll', function(e){
+
+      var scrollWidth = parseInt(e.target.scrollWidth);
+      var scrollLeft = parseInt(e.target.scrollLeft);
+      var clientWidth = parseInt(e.target.clientWidth);
+      
+      if ((scrollWidth - scrollLeft) <= (clientWidth + 30)) {
+        $(".view-videos.view-display-id-block_2  .gradient").removeClass('active');
+        $(".view-videos.view-display-id-block_2  .gradient").addClass("disable")
+      } 
+      else {
+        $(".view-videos.view-display-id-block_2 .gradient").removeClass('disable');
+        $(".view-videos.view-display-id-block_2 .gradient").addClass("active")
+      }
+      $(".view-videos.view-display-id-block_2 .view-content").css('width', '92.9%');
+    });
+    
 });
 
 $(window).resize(function() {
   $(".view-photos.view-display-id-block_1 .view-content").css('width', '92.9%');
+  $(".view-videos.view-display-id-block_2 .view-content").css('width', '92.9%');
   console.log("resizw");
 });
 
