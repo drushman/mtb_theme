@@ -46,7 +46,8 @@ $(function() {
    //   fadeIn = show;
   //    fadeOut = hide;
   });
-    
+  var html = $(".popup-container .category div").html();
+  $(".popup-container .category div").replaceWith("<span>" + html + "</span>");
   
 //  var popup = $(".openlayers-popup-description").children().length;
 //  if (popup) {

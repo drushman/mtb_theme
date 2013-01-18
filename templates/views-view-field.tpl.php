@@ -19,7 +19,4 @@
   * the view is modified.
   */
 ?>
-<?php
-print preg_replace('/<\/div><div[^>]+>/i', ', ', $output); 
-?>
-<?php // print $output; ?>
+<?php print preg_replace('/<\/div><div[^>]+>/i', ', ', $output);  ?>
