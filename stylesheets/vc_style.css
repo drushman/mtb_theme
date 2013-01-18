@@ -114,13 +114,15 @@ ul.filter-content-list li {padding: 0 20px 0 20px; margin-bottom: 5px;}
   left: 0;
   /*width: 31px;*/
   width: 7%;
-  padding-top: 38.5px;
+  /*padding-top: 38.5px;*/
   border: 1px solid #9b9a98;
   border-right: none;
   /*margin-top: 1px;*/
-  padding-bottom: 10px;
+/*  padding-bottom: 10px;*/
   z-index: 20;
   position: relative;
+  overflow: hidden;
+  height:67px;
 }
 
 #topBar .block-views .views_view .view-content {
@@ -154,10 +156,13 @@ ul.filter-content-list li {padding: 0 20px 0 20px; margin-bottom: 5px;}
 }
 #topBar .block-views .view-header span.icon {
   background: url('../images/images_forum/view_button.jpg');
-  float: left;
+ /* float: left;*/
   height: 57px;
   width: 9px;
-  margin-top: -50px;
+  margin-top: 2px;
+  position:absolute;
+  top:3px;
+  right:2px;
   
 }
 #topBar .block-views .views_view .view-content table{
@@ -204,11 +209,15 @@ border-right: none;
 	white-space:nowrap;
 	display:block;
 	bottom:0;
-	width:20px;
-	height:20px;
+/*	width:20px;
+	height:20px;*/
 	font-size:16px;
 	font-weight:normal;
-  float: left;
+/*  float: left;*/
+position: absolute;
+margin-top:5px;
+top: 0;
+left: 4;
 }
 
 #topBar table tbody tr td {
